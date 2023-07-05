@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>初识 WebGL</title>
+  </head>
+  <body>
+    <canvas id="canvas" height="400" width="400"></canvas>
+  </body>
+
+  <script>
+    const ctx = document.querySelector("#canvas");
+    const gl = ctx.getContext("webgl");
+
+    // 定义清除画布颜色
+    gl.clearColor(0, 0, 1, 0.2);
+
+    // 清空
+    gl.clear(gl.COLOR_BUFFER_BIT);
+  </script>
+</html>
